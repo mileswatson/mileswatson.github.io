@@ -9,6 +9,8 @@ body
 {
     width: 100%;
     height: 70%;
+    position: fixed;
+    top: 0px;
 }
 
 header
@@ -56,4 +58,38 @@ a:link, a:visited {
 
 a:hover, a:active {
     text-decoration: underline;
+}
+
+.content {
+    padding-top: 200px;
+}
+
+section {
+    text-align: center;
+    color: #a9cbb7;
+}
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 280px;
+    height: 280px;
+    margin: 30px auto;
+}
+.round img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#addresscontainer {
+    margin: 0 auto;
+    text-align: left;
+    width: 200px;
+    position: relative;
+    left: 30px;
+}
+
+h1 {
+    font-size: 300%;
 }
