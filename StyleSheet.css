@@ -8,7 +8,6 @@ body
 #static-bar
 {
     width: 100%;
-    height: 100%;
     position: fixed;
     top: 0px;
 }
@@ -63,15 +62,13 @@ a:hover, a:active {
 }
 
 .content {
-    padding-top: 200px;
-}
-
-section {
-    text-align: center;
+    padding-top: 100px;
+    text-align: left;
     color: #a9cbb7;
+    margin: 50px;
 }
 
-.round {
+.circle {
     border-radius: 50%;
     overflow: hidden;
     width: 280px;
