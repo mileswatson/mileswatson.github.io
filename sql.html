@@ -30,6 +30,9 @@
                         Each table contains rows and columns, which are know as records and 
                         fields respectively.
                     </p>
+                </article>
+                <br>
+                <article>
                     <h2>Functionality</h2>
                     <p>
                         Databases all have the following basic functionality - create, read,
@@ -60,6 +63,114 @@
                                 be lost due to a system failure.
                             </li>
                         </ol>
+                    </p>
+                </article>
+            </section>
+            <br>
+            <section>
+                <h1>SQL</h1>
+                <article>
+                    <h2>What is SQL?</h2>
+                    <p>
+                        SQL (aka Structure Query Language) is a programming
+                        language used for managing data held in a relational
+                        database. It is used by software or clients to 
+                        communicate with the DBMS. 
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>Reading Data</h2>
+                    <p>
+                        The fundamental to reading data in SQL is the SELECT keyword. All SQL read queries are structured as <br>"SELECT fields FROM table WHERE condition".
+                    </p>
+                    <p>
+                        For example, selecting the name and address of all students who are older than 15 could be done with <br>"SELECT name, address FROM students WHERE age >= 15".
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>Deleting Data</h2>
+                    <p>
+                        Similar to reading, deleting records in SQL also uses a keyword. All SQL delete queries are structured as
+                        <br>
+                        "DELETE FROM table WHERE condition".
+                    </p>
+                    <p>
+                        For example, deleting all students in year 13 could be done with the command
+                        <br>
+                        "DELETE FROM students WHERE yr == 13".
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>Updating Data</h2>
+                    <p>
+                        Data doesn't just have to be deleted and remade to change a value. You can change individual fields using the 
+                        <br>
+                        "UPDATE table SET field=value WHERE condition"
+                        <br>
+                        structure.
+                    </p>
+                    <p>
+                        For example, increasing the year field for every student that passed the final exam could be done with
+                        <br>
+                        "UPDATE students SET yr=yr+1 WHERE finalExamPassed"
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>Creating Records</h2>
+                    <p>
+                        Creating new records can be done with the insert command. It is used in the format:
+                        <br>
+                        "INSERT INTO table VALUES (value1, value2, value3)
+                        <br>
+                        structure.
+                    </p>
+                    <p>
+                        For example, inserting my data into a table with fields (id, name, age, year) could be done with
+                        <br>
+                        "INSERT INTO students VALUES (3209, 'Miles Watson', 16, 12)"
+                    </p>
+                </article>
+                <br>
+                <article>
+                    <h2>Deleting Tables</h2>
+                    <p>
+                        Tables can be deleted using the DROP keyword in the structure
+                        <br>
+                        "DROP TABLE table"
+                        <br>
+                        They can also be cleared using the TRUNCATE keyword:
+                        <br>
+                        "TRUNCATE TABLE table"
+                    </p>
+                </article>
+                <article>
+                    <h2>Boolean Logic</h2>
+                    <p>
+                        Boolean logic can be used to take into account multiple conditions. The keywords AND and OR behave like && and || in most programming languages - AND returns TRUE if both A and B are TRUE, OR returns TRUE if either A or B are TRUE.
+                    </p>
+                </article>
+                <article>
+                    <h2>Wildcards</h2>
+                    <p>
+                        There are a few wildcards that can be used in SQL. The most famous of which is the * wildcard, used to return all fields of a table.
+                        <br>
+                        "SELECT * FROM table WHERE condition"
+                        <br>
+                        You can also used wildcards to match strings. For example, you can find all the people that have the letter "A" before the letter "E" in their name with the following statement:
+                        <br>
+                        "SELECT name FROM students WHERE name LIKE "%a%e%"
+                    </p>
+                </article>
+                <article>
+                    <h2>Joining Tables</h2>
+                    <p>
+                        Getting data from multiple tables can be done two ways - with a JOIN statement or with nested SELECTS. Say you have two tables, students with fields (id, name) and grades with fields (studentID, subject, grade). If I wanted to get the Physics grade of "Miles Watson", I could do
+                        <br>
+                        "SELECT grade FROM students JOIN grades ON (id=studentID) WHERE name='Miles Watson'"
                     </p>
                 </article>
             </section>
