@@ -3,6 +3,7 @@ body
     background-color:#414141;
     margin: 0px;
     font-family:'Trebuchet MS';
+    height: 100%;
 }
 
 #static-bar
@@ -62,10 +63,11 @@ a:hover, a:active {
 }
 
 .content {
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: left;
     color: #a9cbb7;
-    margin: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .circle {

@@ -18,30 +18,49 @@
             </nav>
         </div>
         <div class="content">
-            <div class="round">
-                <img src="res/doot.gif" />
-            </div>
             <section>
-                <h1>About Me</h1>
+                <h1>Databases</h1>
                 <article>
+                    <h2>What are databases?</h2>
                     <p>
-                        Here is a paragraph.
+                        A database is a collection of data organized in tables, stored and 
+                        accessed by computer systems.
                     </p>
                     <p>
-                        This is another very interesting paragraph.
+                        Each table contains rows and columns, which are know as records and 
+                        fields respectively.
                     </p>
-                </article>
-                <h1>Contact details</h1>
-                <article>
-                    <h2>Address</h2>
-                    <div id="addresscontainer">
-                        <ul>
-                            <li>63 My Street</li>
-                            <li>My Town</li>
-                            <li>My County</li>
-                            <li>England</li>
-                        </ul>
-                    </div>
+                    <h2>Functionality</h2>
+                    <p>
+                        Databases all have the following basic functionality - create, read,
+                        update, delete.
+                    </p>
+                    <p>
+                        Each operation on a database (transaction) must satisfy ACID criteria.
+                        This means that each transaction must succeed or fail as a complete unit, 
+                        without partially completing an operation. ACID stands for:
+                        <ol>
+                            <li>
+                                Atomicity - a change to a database is either completely performed,
+                                or not at all. A half completed change must not be saved to the 
+                                database.
+                            </li>
+                            <li>
+                                Consistency - any change in the database must retain the overall ]
+                                state of a database. For example, money subtracted from one account 
+                                must be added to another account, or the money will literally 
+                                dissappear.
+                            </li>
+                            <li>
+                                Isolation - a transaction must not be able to unterrupted by another
+                                transaction, preventing race conditions.
+                            </li>
+                            <li>
+                                Durability - once a change has been made to a database, it must not
+                                be lost due to a system failure.
+                            </li>
+                        </ol>
+                    </p>
                 </article>
             </section>
             <br/>
